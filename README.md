@@ -1,27 +1,39 @@
-## Laravel PHP Framework
+# Conduite de Projet
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+[![Build Status](https://travis-ci.org/hardwork2015/cdp.svg?branch=dev)](https://travis-ci.org/hardwork2015/cdp)
+[![Code Climate](https://codeclimate.com/github/hardwork2015/cdp/badges/gpa.svg)](https://codeclimate.com/github/hardwork2015/cdp)
+[![Dependency Status](https://www.versioneye.com/user/projects/5625452636d0ab0019000bd4/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5625452636d0ab0019000bd4)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Cet outil permet la gestion d'une équipe grace à la méthode SCRUM.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+##Configuration du serveur
 
-## Official Documentation
+Afin que ce projet puisse fonctionner sur votre serveur, vous aurez besoin de  :
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+- PHP >= 5.5.9
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
 
-## Contributing
+##Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Après téléchargement du projet, se rendre dans le dossier grâce à votre terminal, puis lancer la commande suivante à fin de mettre à jour le projet via Composer :
 
-## Security Vulnerabilities
+    composer update
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Suite à cela, il ne vous reste plus qu'a configurer votre base de donnée.
+Pour se faire commencez par modifier le fichier .env, en y précisant les informations relatives à votre base de données.
+
+Vous pouvez également vous rendre sur le fichier config/database.php.
+
+Après avoir configuré votre base de données, il ne vous reste plus qu'a l'initialiser en lançant la commande suivante :
+
+    php artisan migrate
+
+Félicitation votre projet est désormais pleinement fonctionnel.
+
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+This tool is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)

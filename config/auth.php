@@ -29,7 +29,7 @@ return [
     */
 
     'model' => App\User::class,
-
+    'model' => App\Developer::class,
     /*
     |--------------------------------------------------------------------------
     | Authentication Table
@@ -42,7 +42,7 @@ return [
     */
 
     'table' => 'users',
-
+    'table' => 'Developer',
     /*
     |--------------------------------------------------------------------------
     | Password Reset Settings

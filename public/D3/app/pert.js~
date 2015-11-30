@@ -1,0 +1,34 @@
+loadData(
+	{
+		 name: 'PERT Diagram',
+		 nodes: [
+			{ id: 'nodeS', value: { label: 'nodeS' } },
+			{ id: 'node1', value: { label: 'node1' } },
+			{ id: 'node2', value: { label: 'node2' } },
+			{ id: 'node3', value: { label: 'node3' } },
+			{ id: 'node4', value: { label: 'node4' } },
+			{ id: 'node5', value: { label: 'node5' } },
+			{ id: 'node6', value: { label: 'node6' } },
+			{ id: 'node7', value: { label: 'node7' } },
+			{ id: 'node8', value: { label: 'node8' } },
+		 ],
+		 links:[
+			{ u: 'node0', v: 'node1', value: { label: 'code1 2' } },
+
+			{ u: 'node0', v: 'node2', value: { label: 'code2 1' } },
+
+			{ u: 'node0', v: 'node3', value: { label: 'code3 2' } },
+
+			{ u: 'node1', v: 'node4', value: { label: 'code4 1' } },
+
+			{ u: 'node2', v: 'node5', value: { label: 'code5 3' } },
+
+			{ u: 'node3', v: 'node6', value: { label: 'code5 3' } },
+
+			{ u: 'node5', v: 'node7', value: { label: 'code6 1' } },
+
+			{ u: 'node6', v: 'node8', value: { label: 'code6 1' } },
+
+		 ],
+	}
+);
